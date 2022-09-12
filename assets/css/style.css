@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.logo img{
+    width: 100%;
+}
+header{
+    padding: 40px 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li{
+    margin-left: 50px;
+
+   
+    
+}
+.bars{
+    display: none;
+}
+nav ul li a{
+    color: #212529;
+    font-size: 14px;
+    position: relative;
+    
+}
+nav i{
+    margin-left: 30px;
+    color: #212529;
+    font-size: 17px;
+}
+nav span{
+    margin-left: 30px;
+}
+.search{
+    transform: rotate(90deg);
+}
+.shop span{
+    color: white;
+    background-color: red;
+    font-size: 12px;
+    border-radius: 51%;
+    position: absolute;
+    right: -3px;
+    top: -4px;
+}
+.shop{
+    position: relative;
+ 
+}
+.up-menu::before{
+content: '';
+bottom: 0;
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: black;
+transition: 0.5s;
+}
+
+#topmenu:hover #batommenu{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+#batommenu{
+visibility: hidden;
+opacity: 0;
+}
+
+nav li:hover .up-menu::before{
+    width: 100%;
+    
+}
+nav li:hover #batommenu{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+
+}
+
+
+nav li:hover a {
+    color: #212529;
+
+}
+.home::before{
+    content: '';
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    color: #212529;
+    transition: 0.5s;
+}
+#batommenu{
+    position: absolute;
+    width: 250PX;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    left: -82px;
+    
+}
+#topmenu{
+    position: relative;
+}
+#menu{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    left: -82px;
+  visibility: hidden;
+  opacity: 0;
+    
+}
+#menu2{
+    position: relative;
+}
+#menu2:hover #menu{
+    visibility: visible;
+    opacity: 1;
+}
+.section{
+    width: 100%;
+    padding: 14rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-slider-background.jpg);
+}
+.container{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: -120px;
+    left: 80px;
+}
+.text h1{
+ width: 32%;
+}
+.one-p{
+    display: none;
+}
+.text p{
+    width: 37%;
+    color: rgb(109, 106, 106);
+    font-size: 18px;
+
+}
+.text h1 span{
+    color: red;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.two h1{
+    font-size: 12px;
+    color: #1b1b1b;
+}
+.section2{
+    margin-top: 35px;
+}
+.one a{
+    color: #1b1b1b;
+    font-size: 12px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+#allred{
+    color: red;
+}
+
+
+.wekil img{
+    width: 100%;
+  
+    transition: 0.5s;
+
+
+}
+.yazi{
+    text-align: center;
+}
+.yazi a{
+    font-size: 15px;
+    color: #1b1b1b;
+    
+}
+.yazi h1{
+    font-size: 12px;
+    color: #1b1b1b;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+.wekil{
+    overflow: hidden ;
+}
+.wekil:hover img{
+transform: scale(1.1);
+}
+.two{
+    margin-bottom: 20px;
+}
+#sweet{
+position: relative;
+}
+#sweet::after{
+    content: 'SOLD';
+    background-color: #1b1b1b;
+    position: absolute;
+ 
+    color: white;
+    padding: 5px 10px;
+    top: 10px;
+    left: 10px;
+   
+}
+#sage{
+    position: relative;
+    }
+ #sage::after{
+        content: 'SALE';
+        background-color:white;
+        position: absolute;
+     
+        color: #1b1b1b;
+        padding: 5px 10px;
+        top: 10px;
+      left: 10px;
+       
+ }
+ .videoplayer{
+    
+    position: relative;
+
+ 
+
+ }
+ .rotate a{
+   padding: 50px;
+   background-color: white;
+   position: absolute;
+   border-radius: 100%;
+   top: 107px;
+   left: 260px;
+ }
+ @media(max-width:576px){
+    .rotate a{
+        top: 65px;
+        left: 159px;
+    }
+ }
+ .rotate i{
+    color: #f34f3f;
+font-size: 20px;
+ }
+ .valentine i{
+    color: #f34f3f;
+font-size: 20px;
+ }
+ .valentine{
+   
+ }
+ .valentinetext{
+   
+ }
+ .valentinetext h2{
+   
+    font-size: 38px;
+    color: #1b1b1b;
+ }
+ .valentinetext h2 span{
+    color: #f34f3f;
+ }
+ .valentine p{
+    opacity: 0.8    ;
+ 
+ }
+ .section3{
+    background-color: #f7f7f7;
+    margin-top: 50px;
+    padding: 5rem 0rem;
+ }
+ .expert{
+    text-align: center;
+    margin-top: 50px;
+}
+.expert p{
+opacity: 0.8;
+}
+.section4 .photo img{
+ width: 100%;
+}
+
+.section4 .excart .extext {
+    text-align: center;
+}
+.expert{
+    margin-bottom: 50px;
+}
+.section4 .excart .extext h6{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #1b1b1b;
+}
+@media(max-width:576px){
+    #menu2{
+        display: none;
+    }
+    #topmenu{
+        display: none;
+    }
+    .ic{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .section .text p{
+        display: none;
+    }
+    .section .text h1{
+        width: 100%;
+    }
+    .section2 .one{
+        display: none;
+    }
+    .one-p{
+        display: block;
+      
+    }
+    .one-p h1{
+        font-size: 13px;
+    }
+    .top{
+        display: flex;
+        justify-content: space-around;
+    }
+ 
+}
+.section5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 18rem 0;
+    background-attachment: fixed;
+    background-image: url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg);
+}
+.section5 .colorful h3{
+    text-align: center;
+    color: white;
+
+   
+}
+.inputemail{
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.inputemail input{
+   border: none;
+   outline: none;
+   margin-left: 10px;
+
+}
+.inputemail button{
+    border: none;
+    padding: 20px 40px;
+    background-color: #f34f3f;
+    
+}
+.pht{
+    position: relative;
+    overflow: hidden;
+   
+}
+.pht img{
+    transition: 0.5s;
+}
+.textpower{
+    text-align: center;
+    margin-top: 20px;
+}
+.textpower h3{
+    color: #2b2b2b;
+    font-size: 25px;
+}
+.textpower p{
+    color: #2b2b2b;
+    opacity: 0.8;
+}
+.pht p{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color:white;
+    padding: 8px 16px;
+}
+.pht:hover img{
+    transform: scale(1.1);
+}
+
+.section2 .one a:hover{
+    color: #f34f3f;
+    transition: 0.5s;
+}
+.videoplayer{
+    overflow: hidden;
+    
+}
+.videoplayer img{
+    transition: 0.5s;
+}
+.videoplayer img:hover{
+    transform: scale(1.1);
+}
+.two{
+    position: relative;
+}
+#filterdrop{
+    position: absolute;
+        padding: 40px 80px;
+    background-color: #fefefe;
+    top: 30px;
+    right: 70px;
+    z-index: 99;
+    display: none;
+}
+.two:hover #filterdrop{
+display: block;
+}
+#filterdrop li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#filterdrop p{
+    color: #1b1b1b;
+    display: flex;
+   justify-content: start;
+}
+#filterdrop2{
+    position: absolute;
+     padding: 40px 80px;
+    background-color: #fefefe;
+    top: 30px;
+    left: -100px;
+    z-index: 99;
+    display: none;
+   
+}
+#filterdrop2 li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.two:hover #filterdrop2{
+    display: block;
+    }
+
+
+
+
+
+
+    
+
+
